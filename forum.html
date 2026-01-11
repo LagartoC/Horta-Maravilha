@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <body>
+    <div class="banner">
+    <img src="icon1.png" alt="Ícone de planta" class="banner-icon">
+    <h1 class="banner-title">Horta Comunitária Jardim Maravilha</h1>
+    </div>
+    <!-- menu para navegação presente em todas as minhas paginas -->
+     <div class="menu">
+        <a href="Inicio.html">Horta</a>
+        <a href="forum.html">Forum</a>
+        <a href="sobreNos.html">Sobre o Projeto</a>
+    </div>
+
+
+    <div class="forum-container">
+
+    <h2>Fórum da Horta Comunitária</h2>
+
+    <!-- Es -->
+    <div class="forum-stats">
+        <div class="stat">
+            <strong id="total-topicos">0</strong>
+            <span>Tópicos</span>
+        </div>
+        <div class="stat">
+        <strong id="total-respostas">0</strong>
+        <span>Respostas</span>
+         </div>
+    </div>
+
+    <!-- Criar tópico -->
+    <div class="novo-topico">
+        <h3>Criar novo tópico</h3>
+
+        <input type="text" id="tituloTopico" placeholder="Título do tópico">
+        <textarea id="conteudoTopico" placeholder="Descrição do tópico"></textarea>
+
+        <button onclick="adicionarTopico()">Criar Tópico</button>
+    </div>
+
+    <!-- Lista de tópicos -->
+    <div class="lista-topicos" id="listaTopicos">
+        <p class="mensagem-vazia">Nenhum tópico criado</p>
+    </div>
+
+</div>
+
+<script src="forum.js"></script>
+
+</body>
+</html>
